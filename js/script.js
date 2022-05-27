@@ -116,7 +116,7 @@
 // console.log(firstName);
 // console.log(lastName);
 
-const arr = [15, 28, 106, 1, 3, 6, 10, 4, 7];
+// const arr = [15, 28, 106, 1, 3, 6, 10, 4, 7];
 
 // arr.forEach(function(item, i, arr){
 //     console.log(`${item} под индексом ${i} в массиве ${arr}`);
@@ -124,12 +124,45 @@ const arr = [15, 28, 106, 1, 3, 6, 10, 4, 7];
 
 // const str = prompt('', '');
 // const products = str.split(', ');
-arr.sort(compareNum);
-console.log(arr);
+// arr.sort(compareNum);
 
-function compareNum (a, b){
-    return a - b;
-}
+// function compareNum (a, b){
+//     return a - b;
+// }
+
+// function clone (objectMain){
+//     let copy = {};
+
+//     for (let key in objectMain){
+//         copy[key] = objectMain[key]; 
+//     }
+//     return copy;
+// }
+
+// const numbers = {
+//     a: 1,
+//     b: 2,
+//     c: 46,
+//     d: {
+//         z: 146,
+//         x: 17
+//     },
+//     f: 228
+// };
+
+// const newArr = clone(arr);
+
+// newArr[1] = 228;
+
+// console.log(typeof(newArr));
+
+// console.log(typeof(arr));
+
+// const newNumbers = clone(numbers);
+// newNumbers.a = 27;
+// newNumbers.d.z = 22282;
+// console.log(numbers);
+// console.log(newNumbers);
 // console.log(products.join('; '));
 
 //arr.pop();
@@ -144,3 +177,37 @@ function compareNum (a, b){
 // for (let value of arr){
 //     console.log(value);
 // }
+
+// const add = {
+//     g: 2098,
+//     h: 123456
+// };
+
+// let yes = Object.assign(newNumbers, add); // можно поставить {} вместо любого аргумента чтобы клонировать поверхностные значения
+
+// console.log(yes);
+
+const video = ['youtube', 'rutube', 'vimeo'],
+      internet = ['google', 'yandex', 'yahoo'],
+      all = [...video, ...internet, 'VK', 'facebook'];
+
+// console.log(all);
+
+function show(a, b, c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+show(...video);
+
+const newObj = {
+    one: 1,
+    two: 2
+};
+
+const arr = [1, 2, 3, 4, 5, 56];
+
+const newSObj = {...arr};
+
+// console.log(newSObj); 
